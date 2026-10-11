@@ -1,4 +1,4 @@
-
+const path = require("path");
 const express = require("express");
 const cors = require("cors");
 const bcrypt = require("bcryptjs");
@@ -223,7 +223,7 @@ app.post("/api/auth/login", async (req, res) => {
         });
     }
 });
-
-app.listen(PORT, () => {
+app.use(express.static(path.join(__dirname, "../Frontend")));
+app.listen(PORT,"0.0.0.0", () => {
     console.log(`CivicX backend running at http://localhost:${PORT}`);
 });

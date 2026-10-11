@@ -1,7 +1,7 @@
 
 /* CIVICX - Admin Panel connected to Backend */
 
-const API_URL = "http://localhost:3000/api";
+const API_URL = "/api";
 
 const complaintList = document.getElementById("adminComplaintList");
 

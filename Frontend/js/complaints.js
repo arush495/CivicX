@@ -1,7 +1,7 @@
 
 /* CIVICX - Backend Complaint Submission and Tracking */
 
-const API_URL = "http://localhost:3000/api";
+const API_URL = "/api";
 
 function showComplaintMessage(message, type) {
     const element = document.getElementById("complaintMessage");
