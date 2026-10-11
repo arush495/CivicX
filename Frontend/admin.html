@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Verification | CivicX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">C</span>
+            <span>
+                CivicX
+                <div class="tagline">Transparency. Verified.</div>
+            </span>
+        </a>
+
+        <nav class="home-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="track-complaint.html">Track Complaint</a>
+        </nav>
+    </header>
+
+    <main class="home-section">
+
+        <div class="section-heading">
+            <span class="eyebrow">CIVICX ADMIN</span>
+            <h2>Complaint Verification Panel</h2>
+            <p>
+                Review public reports, check the available evidence
+                and update the verification status.
+            </p>
+        </div>
+
+        <div class="admin-notice">
+            <strong>Demo Admin Panel</strong>
+            <p>
+                This is a local prototype. A real deployment requires
+                secure admin login and authorised reviewers.
+            </p>
+        </div>
+
+        <div class="admin-summary">
+            <div class="detail-card">
+                <span class="detail-label">Total Reports</span>
+                <h2 id="totalReports">0</h2>
+            </div>
+
+            <div class="detail-card">
+                <span class="detail-label">Awaiting Verification</span>
+                <h2 id="pendingReports">0</h2>
+            </div>
+
+            <div class="detail-card">
+                <span class="detail-label">Verified</span>
+                <h2 id="verifiedReports">0</h2>
+            </div>
+        </div>
+
+        <section class="detail-section">
+            <h2>Submitted Complaints</h2>
+
+            <div id="adminComplaintList">
+                <p class="sample-warning">
+                    Loading complaint records...
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="home-footer">
+        <a href="index.html" class="footer-brand">CivicX</a>
+        <p>Transparency. Verified.</p>
+    </footer>
+
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

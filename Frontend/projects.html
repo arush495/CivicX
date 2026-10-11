@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Projects | CivicX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">C</span>
+            <span>
+                CivicX
+                <div class="tagline">Transparency. Verified.</div>
+            </span>
+        </a>
+
+        <nav class="home-nav">
+            <a href="index.html" data-en="Home" data-hi="होम">Home</a>
+            <a href="projects.html" data-en="Projects" data-hi="परियोजनाएँ">Projects</a>
+            <a href="login.html" data-en="Login" data-hi="लॉगिन">Login</a>
+            <a href="signup.html" class="nav-join"
+               data-en="Join CivicX" data-hi="CivicX से जुड़ें">Join CivicX</a>
+        </nav>
+
+        <select id="languageSelect" class="language-select"
+                aria-label="Choose language">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+    </header>
+
+    <main>
+        <section class="home-section">
+            <div class="section-heading">
+                <span class="eyebrow"
+                      data-en="PUBLIC PROJECT EXPLORER"
+                      data-hi="सार्वजनिक परियोजनाएँ">
+                    PUBLIC PROJECT EXPLORER
+                </span>
+
+                <h2 data-en="Find a project. Follow its progress."
+                    data-hi="परियोजना खोजें। उसकी प्रगति देखें।">
+                    Find a project. Follow its progress.
+                </h2>
+
+                <p data-en="Search project records and explore their reported status."
+                   data-hi="परियोजनाओं के रिकॉर्ड खोजें और उनकी रिपोर्ट की गई स्थिति देखें।">
+                    Search project records and explore their reported status.
+                </p>
+            </div>
+
+            <!-- Search and filters -->
+            <div class="project-filters">
+                <input
+                    type="search"
+                    id="projectSearch"
+                    placeholder="Search by project, location or department..."
+                    aria-label="Search projects"
+                    data-placeholder-en="Search by project, location or department..."
+                    data-placeholder-hi="परियोजना, स्थान या विभाग से खोजें...">
+
+                <select id="statusFilter" aria-label="Filter by status">
+                    <option value="all" data-en="All statuses" data-hi="सभी स्थितियाँ">All statuses</option>
+                    <option value="pending" data-en="Approval pending" data-hi="मंज़ूरी लंबित">Approval pending</option>
+                    <option value="ongoing" data-en="In progress" data-hi="कार्य जारी">In progress</option>
+                    <option value="completed" data-en="Completed" data-hi="पूरा हुआ">Completed</option>
+                </select>
+            </div>
+
+            <p id="projectCount" class="project-count"
+               data-en="Showing 3 sample projects"
+               data-hi="3 नमूना परियोजनाएँ दिखाई जा रही हैं">
+                Showing 3 sample projects
+            </p>
+
+            <!-- Sample projects -->
+            <div class="project-grid" id="projectGrid">
+
+                <article class="project-card"
+                    data-status="pending"
+                    data-search="local road improvement indira nagar lucknow public works">
+
+                    <div class="project-card-top">
+                        <span class="project-type"
+                              data-en="ROAD INFRASTRUCTURE"
+                              data-hi="सड़क निर्माण">ROAD INFRASTRUCTURE</span>
+                        <span class="project-status pending"
+                              data-en="Pending"
+                              data-hi="लंबित">Pending</span>
+                    </div>
+
+                    <h3 data-en="Local Road Improvement"
+                        data-hi="स्थानीय सड़क सुधार">Local Road Improvement</h3>
+
+                    <p data-en="Indira Nagar, Lucknow"
+                       data-hi="इंदिरा नगर, लखनऊ">Indira Nagar, Lucknow</p>
+
+                    <div class="project-card-bottom">
+                        <span data-en="Project status" data-hi="परियोजना की स्थिति">Project status</span>
+                        <strong data-en="Approval pending"
+                                data-hi="मंज़ूरी लंबित">Approval pending</strong>
+                    </div>
+
+                    <a class="project-view-link"
+                       href="project-details.html?id=road-demo"
+                       data-en="View Project →"
+                       data-hi="परियोजना देखें →">View Project →</a>
+                </article>
+
+                <article class="project-card"
+                    data-status="ongoing"
+                    data-search="community facility upgrade lucknow construction">
+
+                    <div class="project-card-top">
+                        <span class="project-type"
+                              data-en="PUBLIC FACILITY"
+                              data-hi="सार्वजनिक सुविधा">PUBLIC FACILITY</span>
+                        <span class="project-status ongoing"
+                              data-en="In progress"
+                              data-hi="कार्य जारी">In progress</span>
+                    </div>
+
+                    <h3 data-en="Community Facility Upgrade"
+                        data-hi="सामुदायिक सुविधा सुधार">Community Facility Upgrade</h3>
+
+                    <p data-en="Lucknow · Sample location"
+                       data-hi="लखनऊ · नमूना स्थान">Lucknow · Sample location</p>
+
+                    <div class="project-card-bottom">
+                        <span data-en="Project status" data-hi="परियोजना की स्थिति">Project status</span>
+                        <strong data-en="Work in progress"
+                                data-hi="कार्य जारी">Work in progress</strong>
+                    </div>
+
+                    <a class="project-view-link"
+                       href="project-details.html?id=facility-demo"
+                       data-en="View Project →"
+                       data-hi="परियोजना देखें →">View Project →</a>
+                </article>
+
+                <article class="project-card"
+                    data-status="completed"
+                    data-search="neighbourhood drain repair lucknow drainage public works">
+
+                    <div class="project-card-top">
+                        <span class="project-type"
+                              data-en="PUBLIC WORKS"
+                              data-hi="सार्वजनिक निर्माण">PUBLIC WORKS</span>
+                        <span class="project-status completed"
+                              data-en="Completed"
+                              data-hi="पूरा हुआ">Completed</span>
+                    </div>
+
+                    <h3 data-en="Neighbourhood Drain Repair"
+                        data-hi="मोहल्ले की नाली की मरम्मत">Neighbourhood Drain Repair</h3>
+
+                    <p data-en="Lucknow · Sample location"
+                       data-hi="लखनऊ · नमूना स्थान">Lucknow · Sample location</p>
+
+                    <div class="project-card-bottom">
+                        <span data-en="Project status" data-hi="परियोजना की स्थिति">Project status</span>
+                        <strong data-en="Completion recorded"
+                                data-hi="समापन दर्ज">Completion recorded</strong>
+                    </div>
+
+                    <a class="project-view-link"
+                       href="project-details.html?id=drain-demo"
+                       data-en="View Project →"
+                       data-hi="परियोजना देखें →">View Project →</a>
+                </article>
+
+            </div>
+
+            <p id="noProjectsMessage" class="sample-warning" hidden
+               data-en="No matching projects found. Try a different search."
+               data-hi="कोई मिलती-जुलती परियोजना नहीं मिली। दूसरी खोज करें।">
+                No matching projects found. Try a different search.
+            </p>
+
+            <p class="sample-warning"
+               data-en="These are demonstration records, not verified government project data."
+               data-hi="ये प्रदर्शन के लिए नमूना रिकॉर्ड हैं, सत्यापित सरकारी परियोजना डेटा नहीं।">
+                These are demonstration records, not verified government project data.
+            </p>
+        </section>
+    </main>
+
+    <footer class="home-footer">
+        <a href="index.html" class="footer-brand">CivicX</a>
+        <p data-en="Transparency. Verified."
+           data-hi="पारदर्शिता। सत्यापन।">Transparency. Verified.</p>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>

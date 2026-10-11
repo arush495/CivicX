@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | CivicX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">C</span>
+            <span>
+                CivicX
+                <div class="tagline">Transparency. Verified.</div>
+            </span>
+        </a>
+
+        <nav class="home-nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="login.html">Login</a>
+        </nav>
+
+        <select id="languageSelect" class="language-select">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+    </header>
+
+    <main class="home-section">
+
+        <a href="projects.html" class="project-view-link">
+            ← Back to Projects
+        </a>
+
+        <section class="project-detail-header">
+            <span class="eyebrow">PUBLIC PROJECT RECORD</span>
+
+            <h1 id="detailName">Indira Nagar Road Improvement</h1>
+
+            <p id="detailLocation">Indira Nagar, Lucknow, Uttar Pradesh</p>
+
+            <span id="detailStatus" class="project-status pending">
+                Approval Pending
+            </span>
+
+            <p class="sample-warning">
+                DEMO DATA — This is an illustrative project, not an official
+                government record.
+            </p>
+        </section>
+
+        <section class="detail-grid">
+
+            <article class="detail-card">
+                <span class="detail-label">Sanctioned Budget</span>
+                <h2 id="detailBudget">Not yet confirmed</h2>
+                <p>Official approval record required</p>
+            </article>
+
+            <article class="detail-card">
+                <span class="detail-label">Contractor</span>
+                <h2 id="detailContractor">Not yet available</h2>
+                <p>To be updated from an official record</p>
+            </article>
+
+            <article class="detail-card">
+                <span class="detail-label">Planned Start</span>
+                <h2 id="detailStart">Not available</h2>
+                <p>According to the available project schedule</p>
+            </article>
+
+            <article class="detail-card">
+                <span class="detail-label">Expected Completion</span>
+                <h2 id="detailEnd">Not available</h2>
+                <p>According to the available project schedule</p>
+            </article>
+
+        </section>
+
+        <section class="detail-section">
+            <h2>Project Timeline</h2>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                    <h3>Project Proposal</h3>
+                    <p>Project request or proposal submitted.</p>
+                    <span class="timeline-status">Status to be verified</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                    <h3>Government Approval</h3>
+                    <p>Approval order and sanctioned budget record.</p>
+                    <span class="timeline-status">Pending verification</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                    <h3>Tender and Contractor</h3>
+                    <p>Tender result and work order details.</p>
+                    <span class="timeline-status">Record not available</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                    <h3>Construction and Inspection</h3>
+                    <p>Progress reports and site inspection evidence.</p>
+                    <span class="timeline-status">Awaiting records</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div>
+                    <h3>Completion</h3>
+                    <p>Completion certificate and final status.</p>
+                    <span class="timeline-status">Not confirmed</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Documents and Verification</h2>
+
+            <p>
+                Available official documents, bills and inspection reports
+                will be listed here after their sources and verification
+                status are recorded.
+            </p>
+
+            <div class="document-placeholder">
+                No verified documents have been added to this demo project yet.
+            </div>
+        </section>
+
+        <section class="report-callout">
+            <div>
+                <h2>Found a problem?</h2>
+                <p>
+                    Submit a report with its location, description and
+                    supporting evidence. The report must be verified
+                    before any action is taken.
+                </p>
+            </div>
+
+            <a href="report-complaint.html" class="btn hero-primary">
+                Report a Problem
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="home-footer">
+        <a href="index.html" class="footer-brand">CivicX</a>
+        <p>Transparency. Verified.</p>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/project-details.js"></script>
+
+</body>
+</html>

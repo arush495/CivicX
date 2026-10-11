@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Problem | CivicX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="topbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">C</span>
+            <span>
+                CivicX
+                <div class="tagline">Transparency. Verified.</div>
+            </span>
+        </a>
+
+        <nav class="home-nav">
+            <a href="index.html" data-en="Home" data-hi="होम">Home</a>
+            <a href="projects.html" data-en="Projects" data-hi="परियोजनाएँ">Projects</a>
+            <a href="login.html" data-en="Login" data-hi="लॉगिन">Login</a>
+        </nav>
+
+        <select id="languageSelect" class="language-select"
+                aria-label="Choose language">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+    </header>
+
+    <main class="home-section">
+
+        <div class="section-heading">
+            <span class="eyebrow"
+                  data-en="CITIZEN REPORTING"
+                  data-hi="नागरिक शिकायत">CITIZEN REPORTING</span>
+
+            <h2 data-en="Report a public project problem"
+                data-hi="सार्वजनिक परियोजना की समस्या रिपोर्ट करें">
+                Report a public project problem
+            </h2>
+
+            <p data-en="Share what you observed. Every report must be verified before action is taken."
+               data-hi="आपने जो देखा, उसकी जानकारी दें। कार्रवाई से पहले हर रिपोर्ट का सत्यापन होगा।">
+                Share what you observed. Every report must be verified before action is taken.
+            </p>
+        </div>
+
+        <section class="auth-card complaint-card">
+
+            <form id="complaintForm">
+
+                <div class="form-group">
+                    <label for="projectName"
+                           data-en="Select Project"
+                           data-hi="परियोजना चुनें">Select Project</label>
+
+                    <select id="projectName" name="projectName" required>
+                        <option value=""
+                                data-en="Choose a project"
+                                data-hi="परियोजना चुनें">Choose a project</option>
+                        <option value="road-demo"
+                                data-en="Local Road Improvement — Demo"
+                                data-hi="स्थानीय सड़क सुधार — डेमो">
+                            Local Road Improvement — Demo
+                        </option>
+                        <option value="facility-demo"
+                                data-en="Community Facility Upgrade — Demo"
+                                data-hi="सामुदायिक सुविधा सुधार — डेमो">
+                            Community Facility Upgrade — Demo
+                        </option>
+                        <option value="drain-demo"
+                                data-en="Neighbourhood Drain Repair — Demo"
+                                data-hi="मोहल्ले की नाली की मरम्मत — डेमो">
+                            Neighbourhood Drain Repair — Demo
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="problemType"
+                           data-en="Type of Problem"
+                           data-hi="समस्या का प्रकार">Type of Problem</label>
+
+                    <select id="problemType" name="problemType" required>
+                        <option value=""
+                                data-en="Select problem type"
+                                data-hi="समस्या का प्रकार चुनें">Select problem type</option>
+                        <option value="work-delay"
+                                data-en="Construction delayed"
+                                data-hi="निर्माण में देरी">Construction delayed</option>
+                        <option value="work-incomplete"
+                                data-en="Work appears incomplete"
+                                data-hi="काम अधूरा दिखाई देता है">Work appears incomplete</option>
+                        <option value="quality-concern"
+                                data-en="Possible quality concern"
+                                data-hi="गुणवत्ता से जुड़ी संभावित समस्या">Possible quality concern</option>
+                        <option value="records"
+                                data-en="Project information or records missing"
+                                data-hi="परियोजना की जानकारी या रिकॉर्ड उपलब्ध नहीं">
+                            Project information or records missing
+                        </option>
+                        <option value="other"
+                                data-en="Other issue"
+                                data-hi="अन्य समस्या">Other issue</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="problemLocation"
+                           data-en="Problem Location"
+                           data-hi="समस्या का स्थान">Problem Location</label>
+
+                    <input type="text"
+                           id="problemLocation"
+                           name="problemLocation"
+                           placeholder="Enter area, road or landmark"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="problemDescription"
+                           data-en="Describe the Problem"
+                           data-hi="समस्या का विवरण दें">Describe the Problem</label>
+
+                    <textarea id="problemDescription"
+                              name="problemDescription"
+                              rows="5"
+                              maxlength="1500"
+                              placeholder="Explain what you observed, including the date if known..."
+                              required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="evidencePhoto"
+                           data-en="Upload Supporting Photo (Optional)"
+                           data-hi="सहायक फोटो अपलोड करें (वैकल्पिक)">
+                        Upload Supporting Photo (Optional)
+                    </label>
+
+                    <input type="file"
+                           id="evidencePhoto"
+                           name="evidencePhoto"
+                           accept="image/jpeg,image/png,image/webp">
+
+                    <p class="terms-note"
+                       data-en="Demo: image upload will be connected to secure storage later. Do not upload private or sensitive information."
+                       data-hi="डेमो: फोटो अपलोड को बाद में सुरक्षित स्टोरेज से जोड़ा जाएगा। निजी या संवेदनशील जानकारी अपलोड न करें।">
+                        Demo: image upload will be connected to secure storage later.
+                        Do not upload private or sensitive information.
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="truthConfirmation" required>
+                        <span data-en="I have described what I observed truthfully."
+                              data-hi="मैंने जो देखा है उसका सही विवरण दिया है।">
+                            I have described what I observed truthfully.
+                        </span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn"
+                        data-en="Submit Report"
+                        data-hi="रिपोर्ट जमा करें">Submit Report</button>
+
+                <p id="complaintMessage"
+                   class="form-message"
+                   role="status"
+                   aria-live="polite"></p>
+
+                <p class="terms-note"
+                   data-en="Submitting a report does not prove wrongdoing. The report must be reviewed and verified before it is referred for action."
+                   data-hi="रिपोर्ट जमा करने से गलती साबित नहीं होती। कार्रवाई के लिए भेजने से पहले रिपोर्ट की जाँच और सत्यापन किया जाएगा।">
+                    Submitting a report does not prove wrongdoing. The report must be reviewed and verified before it is referred for action.
+                </p>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="home-footer">
+        <a href="index.html" class="footer-brand">CivicX</a>
+        <p>Transparency. Verified.</p>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/complaints.js"></script>
+
+</body>
+</html>

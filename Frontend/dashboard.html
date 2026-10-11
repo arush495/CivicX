@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CivicX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">C</span>
+            <span>
+                CivicX
+                <div class="tagline">Transparency. Verified.</div>
+            </span>
+        </a>
+
+        <nav class="home-nav">
+            <a href="index.html" data-en="Home" data-hi="होम">Home</a>
+            <a href="projects.html" data-en="Projects" data-hi="परियोजनाएँ">Projects</a>
+            <a href="report-complaint.html"
+               data-en="Report Problem" data-hi="समस्या रिपोर्ट करें">Report Problem</a>
+            <button id="logoutButton" class="nav-join"
+                    data-en="Logout" data-hi="लॉगआउट">Logout</button>
+        </nav>
+
+        <select id="languageSelect" class="language-select">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+    </header>
+
+    <main class="home-section">
+
+        <section class="dashboard-welcome">
+            <span class="eyebrow"
+                  data-en="CITIZEN DASHBOARD"
+                  data-hi="नागरिक डैशबोर्ड">CITIZEN DASHBOARD</span>
+
+            <h1 data-en="Welcome to CivicX"
+                data-hi="CivicX में आपका स्वागत है">Welcome to CivicX</h1>
+
+            <p id="welcomeUser"
+               data-en="Track public projects and stay informed."
+               data-hi="सार्वजनिक परियोजनाओं को ट्रैक करें और जानकारी पाएँ।">
+                Track public projects and stay informed.
+            </p>
+        </section>
+
+        <section class="dashboard-metrics">
+            <article class="dashboard-card">
+                <span data-en="Demo Projects" data-hi="नमूना परियोजनाएँ">Demo Projects</span>
+                <h2>3</h2>
+                <p data-en="Available to explore" data-hi="देखने के लिए उपलब्ध">Available to explore</p>
+            </article>
+
+            <article class="dashboard-card">
+                <span data-en="Project Statuses" data-hi="परियोजना की स्थितियाँ">Project Statuses</span>
+                <h2>3</h2>
+                <p data-en="Pending, ongoing and completed" data-hi="लंबित, जारी और पूर्ण">Pending, ongoing and completed</p>
+            </article>
+
+            <article class="dashboard-card">
+                <span data-en="Your Reports" data-hi="आपकी रिपोर्ट">Your Reports</span>
+                <h2 id="reportCount">0</h2>
+                <p data-en="Demo reports on this browser" data-hi="इस ब्राउज़र की नमूना रिपोर्ट">Demo reports on this browser</p>
+            </article>
+        </section>
+
+        <section class="dashboard-actions">
+            <h2 data-en="What would you like to do?"
+                data-hi="आप क्या करना चाहेंगे?">What would you like to do?</h2>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">01</div>
+                    <h3 data-en="Explore Projects" data-hi="परियोजनाएँ देखें">Explore Projects</h3>
+                    <p data-en="Search projects and check their reported status."
+                       data-hi="परियोजनाएँ खोजें और उनकी रिपोर्ट की गई स्थिति देखें।">
+                        Search projects and check their reported status.
+                    </p>
+                    <a class="project-view-link" href="projects.html"
+                       data-en="View Projects →" data-hi="परियोजनाएँ देखें →">
+                        View Projects →
+                    </a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">02</div>
+                    <h3 data-en="Report a Problem" data-hi="समस्या रिपोर्ट करें">Report a Problem</h3>
+                    <p data-en="Submit a description and supporting evidence."
+                       data-hi="समस्या का विवरण और सहायक साक्ष्य जमा करें।">
+                        Submit a description and supporting evidence.
+                    </p>
+                    <a class="project-view-link" href="report-complaint.html"
+                       data-en="Make a Report →" data-hi="रिपोर्ट करें →">
+                        Make a Report →
+                    </a>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">03</div>
+                    <h3 data-en="Track Complaint" data-hi="शिकायत ट्रैक करें">Track Complaint</h3>
+                    <p data-en="Check a submitted report using its Complaint ID."
+                       data-hi="Complaint ID से जमा की गई रिपोर्ट की स्थिति देखें।">
+                        Check a submitted report using its Complaint ID.
+                    </p>
+                    <a class="project-view-link" href="track-complaint.html"
+                       data-en="Track Now →" data-hi="अभी ट्रैक करें →">
+                        Track Now →
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <p class="sample-warning"
+           data-en="Demo dashboard. Project figures are sample data, not official government records."
+           data-hi="डेमो डैशबोर्ड। परियोजना के आँकड़े नमूना हैं, आधिकारिक सरकारी रिकॉर्ड नहीं।">
+            Demo dashboard. Project figures are sample data, not official government records.
+        </p>
+
+    </main>
+
+    <footer class="home-footer">
+        <a href="index.html" class="footer-brand">CivicX</a>
+        <p>Transparency. Verified.</p>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>

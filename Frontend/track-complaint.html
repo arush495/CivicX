@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Complaint | CivicX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">C</span>
+            <span>
+                CivicX
+                <div class="tagline">Transparency. Verified.</div>
+            </span>
+        </a>
+
+        <nav class="home-nav">
+            <a href="index.html" data-en="Home" data-hi="होम">Home</a>
+            <a href="projects.html" data-en="Projects" data-hi="परियोजनाएँ">Projects</a>
+            <a href="report-complaint.html"
+               data-en="Report a Problem" data-hi="समस्या रिपोर्ट करें">
+                Report a Problem
+            </a>
+        </nav>
+
+        <select id="languageSelect" class="language-select">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+    </header>
+
+    <main class="home-section">
+        <div class="section-heading">
+            <span class="eyebrow"
+                  data-en="COMPLAINT TRACKING"
+                  data-hi="शिकायत की स्थिति">
+                COMPLAINT TRACKING
+            </span>
+
+            <h2 data-en="Track your complaint"
+                data-hi="अपनी शिकायत ट्रैक करें">
+                Track your complaint
+            </h2>
+
+            <p data-en="Enter the Complaint ID received after submitting your report."
+               data-hi="रिपोर्ट जमा करने के बाद मिली Complaint ID दर्ज करें।">
+                Enter the Complaint ID received after submitting your report.
+            </p>
+        </div>
+
+        <section class="auth-card complaint-card">
+            <form id="trackForm">
+                <div class="form-group">
+                    <label for="complaintId"
+                           data-en="Complaint ID"
+                           data-hi="शिकायत आईडी">
+                        Complaint ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="complaintId"
+                        placeholder="e.g. CX-123456-123456"
+                        required>
+                </div>
+
+                <button class="btn" type="submit"
+                        data-en="Track Complaint"
+                        data-hi="शिकायत ट्रैक करें">
+                    Track Complaint
+                </button>
+            </form>
+
+            <div id="trackResult" class="track-result"
+                 aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer class="home-footer">
+        <a href="index.html" class="footer-brand">CivicX</a>
+        <p data-en="Transparency. Verified."
+           data-hi="पारदर्शिता। सत्यापन।">
+            Transparency. Verified.
+        </p>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/complaints.js"></script>
+
+</body>
+</html>

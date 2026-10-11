@@ -1,0 +1,24 @@
+Backend/.env
+Backend/node_modules/
+Backend/civicx.db
+Backend/civicx.db-shm
+Backend/civicx.db-wal
+Backend/promote-admin.js
+
+# Git installation folder
+Git/
+
+# Secrets
+Backend/.env
+Backend/middleware/.env.example
+
+# Dependencies
+Backend/node_modules/
+
+# Local database files
+Backend/civicx.db
+Backend/civicx.db-shm
+Backend/civicx.db-wal
+
+# Temporary admin setup script
+Backend/promote-admin.js

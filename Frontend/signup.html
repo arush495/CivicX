@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | CivicX</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <a href="index.html" class="brand">
+            <span class="brand-icon">C</span>
+            <span>
+                CivicX
+                <div class="tagline">Transparency. Verified.</div>
+            </span>
+        </a>
+
+        <select id="languageSelect" class="language-select"
+                aria-label="Choose language">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+        </select>
+    </header>
+
+    <main class="auth-container">
+        <section class="auth-card">
+
+            <h1>Create your account</h1>
+
+            <p class="auth-description">
+                Join CivicX to explore public projects,
+                report problems and track verified complaints.
+            </p>
+
+            <form id="signupForm">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Enter password again"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input
+                            type="checkbox"
+                            id="ageConsent"
+                            required>
+                        I confirm that I am at least 16 years old.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">
+                    Create Account
+                </button>
+
+                <p id="signupMessage"
+                   class="form-message"
+                   role="status"
+                   aria-live="polite"></p>
+
+                <p class="terms-note">
+                    Please provide accurate information.
+                    Your account details should be protected.
+                    Applicable age and privacy requirements must
+                    be met before real-world deployment.
+                </p>
+
+            </form>
+
+            <div class="auth-footer">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/i18n.js"></script>
+
+</body>
+</html>
